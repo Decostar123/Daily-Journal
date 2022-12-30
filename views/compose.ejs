@@ -1,0 +1,26 @@
+
+<%- include("partials/header") -%>
+<h1>Compose</h1>
+
+
+
+  <form class="" action="/compose" method="post">
+    <div class="form-group">
+    <label>Title</label>
+    <input class = "form-control" type="text" name="postTitle"  value=<%=heading %>>
+    <label>Post</label>
+    <textarea class = "form-control" name="postBody" rows="4" cols="40" ><%=middle%> </textarea>
+    <!-- <button type="submit" name="button" > -->
+<%console.log("Inside the compse.ejs " +ID )%>
+    </div>
+    <!-- button out of the div to cretae some space  -->
+      <button class="btn btn-primary" type="submit" name ="btn" value=<%=ID%> >Publish</button>
+  </form>
+
+
+<!-- <form class="" action="/" method="post">
+  <input type = "text" name="postTitle"  />
+  <button type="submit" name ="button">Publish</button>
+</form> -->
+
+ <%- include("partials/footer") -%>

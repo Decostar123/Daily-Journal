@@ -1,0 +1,41 @@
+<%- include("partials/header") -%>
+<!-- <h1>Home</h1> -->
+<!-- <p><%= paragraph %> </p> -->
+
+
+  <div class="content" style="margin-left:0px" >
+        <% day.forEach( function( d ){ %>
+    <form class="" action="/delete" method="post">
+      <!-- <input  type="checkbox" onChange="this.form.submit()" name="checkbox" value="<%=d._id%>">hi</input> -->
+      <!-- <button type="button" name="button"></button> -->
+      <!-- <button type="button"  name="button"> <font-awesome-icon icon="fa-solid fa-trash" /></button> -->
+      <!-- style="display:inline" -->
+
+      <h1 ><%=d.title %></h1>
+
+      <p  style="margin-left:60px">
+
+      <%= d.body.substring(0,50) +"...." %>
+
+       <a href="/posts/<%= d._id %>" >Read/Edit</a>
+      </p>
+      <button style="margin-left:60px" type="submit" name="btn1" value="<%=d._id%>" > <i class="fa fa-trash"></i></button>
+    </form>
+
+  <% } ) %>
+
+  <br />
+  <!-- as one entry so name and value for the button is not specifies -->
+  <form class="" action="/home" method="post">
+    <button type="submit" class="btn btn-primary" style="margin-bottom:5px" >new entry</button>
+  </form>
+
+
+  </div>
+
+
+
+
+
+
+<%- include("partials/footer") -%>
