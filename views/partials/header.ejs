@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<!-- <head> -->
-  <meta charset="utf-8">
+<head>
+  <meta charset="utf-8" />
   <title>Daily Journal</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <nav  id="nbar" class="navbar navbar-default">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <nav id="nbar" class="navbar navbar-default" style="max-width: fit-content">
     <div class="container">
       <div class="navbar-header">
-        <p class="navbar-brand">DAILY JOURNAL</p>
+        <p class="navbar-brand"><span style="color:green; font-size:5rem">D</span>AILY
+          <span style="color:green ; font-size:5rem">J</span>OURNAL
+        </p>
       </div>
-        <ul class="nav navbar-nav navbar-right">
-          <!-- 6 -->
-          <li id="home"><a href="/home">HOME</a></li>
-          <li id="about"><a href="/compose">NEW ENTRY</a></li>
-          <li id="contact"><a href="/">LOG OUT</a></li>
-        </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- 6 -->
+        <li id="home"><a style="color: black;" href="/home">HOME</a></li>
+        <li id="about"><a style="color: black;" href="/compose">NEW ENTRY</a></li>
+        <li id="contact"><a style="color: black;" href="/">LOG OUT</a></li>
+      </ul>
     </div>
-  </nav>
+    <div class="mid">
 
-  <body>
-    <div class="container"  >
+      <div>
+        <form class="" action="/search" method="post">
+          <input class="inpt" id="filter" name="search_key" placeholder="Enter Your Diary Name..... " />
+      </div>
+
+      <div>
+        <button class="srch" type="submit" name="btn2">
+          <!-- <i class="fas fa-search"></i> -->
+          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      </form>
+    </div>
+
+    <!-- <form class="" action="/search" method="post">
+        <input
+          id="filter"
+          name="search_key"
+          placeholder="Enter you Diary Name "
+        />
+        <button type="submit" name="btnn2">sbmt</button>
+      </form> -->
+  </nav>
+</head>
+
+<!-- <body>
+    <div class="container"></div>
+  </body>
+</html> -->
+<!-- </html> -->
+
+</html>

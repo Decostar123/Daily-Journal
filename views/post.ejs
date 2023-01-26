@@ -1,13 +1,28 @@
-<%- include("partials/header") -%>
+<%- include("partials/head") -%>
 
-<form class="" action="/edit" method="post">
-<h1 name="xyx"><%= heading %></h1>
-<p> <%= middle  %></p>
+  <form class="" action="/edit" method="post">
+    <div style="margin-top:2rem ; margin-left:4rem">
+      <div>
+        <h1 name="xyx">
+          <%= heading %>
+        </h1>
+      </div>
+      <div>
+        <p>
+          <%= middle %>
+        </p>
 
+      </div>
 
-  <button type="submit" name="btn1" value= <%=_id%>   class="btn btn-primary" >edit</button>
+    </div>
+    <div>
+      <button style="margin-left:4rem;margin-top:4rem;  min-width: 8rem ;" type="submit" name="btn1" value=<%=_id%>
+        class="btn btn-primary"
+        >Edit</button>
+    </div>
+
     <!-- // <button type="submit" name="btn2" value= <%=middle%>   hidden >edit</button> -->
-</form>
+  </form>
 
 
-<%- include("partials/footer") -%>
+  <%- include("partials/footer") -%>

@@ -1,26 +1,25 @@
+<%- include("partials/head") -%>
+  <h1 style=" display : flex ; justify-content: center;">Compose</h1>
 
-<%- include("partials/header") -%>
-<h1>Compose</h1>
-
-
+  <!-- value=<%=heading %> -->
 
   <form class="" action="/compose" method="post">
-    <div class="form-group">
-    <label>Title</label>
-    <input class = "form-control" type="text" name="postTitle"  value=<%=heading %>>
-    <label>Post</label>
-    <textarea class = "form-control" name="postBody" rows="4" cols="40" ><%=middle%> </textarea>
-    <!-- <button type="submit" name="button" > -->
-<%console.log("Inside the compse.ejs " +ID )%>
+    <div class="form-group" style="margin:0 20px">
+      <label>Title</label>
+      <input class="form-control" type="text" name="postTitle" required value=<%=heading%> >
+      <label>Post</label>
+      <textarea class="form-control" name="postBody" rows="4" cols="40" required>
+<%=middle%> </textarea>
+      <!-- <button type="submit" name="button" > -->
     </div>
     <!-- button out of the div to cretae some space  -->
-      <button class="btn btn-primary" type="submit" name ="btn" value=<%=ID%> >Publish</button>
+    <button class="btn btn-primary" style="margin-top:2rem ; margin-left : 20px" type="submit" name="btn"
+      value=<%=ID%>>Publish</button>
   </form>
 
-
-<!-- <form class="" action="/" method="post">
+  <!-- <form class="" action="/" method="post">
   <input type = "text" name="postTitle"  />
   <button type="submit" name ="button">Publish</button>
 </form> -->
 
- <%- include("partials/footer") -%>
+  <%- include("partials/footer") -%>
